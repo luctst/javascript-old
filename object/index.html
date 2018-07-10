@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Objects in javascrtip</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center mt-4 mb-4">Object in javascript</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">What is object</h2>
+          <blockquote class="blockquote ml-4">
+            <p><em><small>An object is a collection of properties, and a property is an association between
+            a name (or key) and a value. A property's value can be a function, in which case the property
+            is known as a method. In addition to objects that are predefined in the browser, you can define
+            your own objects.</small></em></p>
+            <footer class="blockquote-footer"><cite><small>developer.mozilla.org</small></cite></footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Litteral object properties</h2>
+          <script src="https://gist.github.com/luctst/14b0b89be59a445bd63decba96398454.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">In javascript there are two ways creating objects, the
+            <code>literal object</code> and with the <code>Object.create()</code> method, we will use
+            the first method because she is the more using.</li>
+            <li class="list-group-item">To create an object simply use <code>{}</code> after your variable name.</li>
+            <li class="list-group-item">Object work with a <code>key: value</code> method, to create
+            a new <code>property</code> add the name of your <code>property</code> and use <code>:</code>
+            to give us a <code>value</code>, don't forget to separate you <code>properties</code> with
+            <code>,</code> .</li>
+            <li class="list-group-item">To access <code>properties</code> in object you have two
+            <code>methods</code> .</li>
+            <li class="list-group-item">the first one is by using the <code>.</code> notation like our first
+            example use <code>object.property</code> to access a value. The second one is by using a method
+            who looks like array method which mean that you can use <code>[]</code> after your object and
+            enter the name of your <code>property</code> like our second example.</li>
+            <li class="list-group-item">You can also <code>change</code> the value of your properties.</li>
+            <li class="list-group-item">Like for access value there are many ways to change value of your properties,
+            the first one is by directly change the value in <code>your object</code>, and the second one is by
+            using one of the methods above (we recommand the first one) and use <code>=</code> to give
+            a new value.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Litteral object methods</h2>
+          <script src="https://gist.github.com/luctst/9c386a4a2d573ca8d744f4c3ae54b992.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">We saw that in an object <code>properties</code> are like
+            variables you can store values by using <code>key: value</code> syntax but we can also use
+            <code>functions</code> in an object and it's called <code>methods</code> .</li>
+            <li class="list-group-item">Function in object works exactly like <code>properties</code> but
+            instead of giving a <code>value</code> you have to use the syntax of a <code>function</code>
+            and that's it you can write your code inside your function.</li>
+            <li class="list-group-item">Now that your function is create you maybe want to call
+            her and it's really simple too, you just have to use this syntax, <code>object.functionName()</code>.</li>
+            <li class="list-group-item">Note : You maybe saw this strange keyword <code>this</code> inside of our
+            function don't worry we will explain his utilities later in the course.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

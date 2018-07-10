@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Training - Scope</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center mt-4 mb-4">Scope in javascript</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Understand how works scope</h2>
+          <blockquote class="blockquote ml-4"><em><small>A scope in programming language is an environment where we can access variables, functions..
+          In Javascript if, for, while.. don't create a scope. So in a script the global scope define all
+          variables written directly on the document root, in our example A variable is in the global scope.
+          The scope only have acess to variables define inside his own scope, for example we can't access to
+          the b variable in the global scope because she's in the first function scope. But we can acess to a
+          'parent' scope, for example we can access inside the first function to the A variable
+           which is define in the global scope.</small></em>
+           <footer class="blockquote-footer"><small><cite title="source title">developer.mozilla.org</cite></small></footer>
+           </blockquote>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Example with scope</h2>
+          <script src="https://gist.github.com/luctst/0c4bba851eb4845e8c8da4c8fab9b337.js"></script>
+          <ul class="list-group mt-4">
+            <li class="list-group-item">We create a A variable in the <code>global scope</code>.</li>
+            <li class="list-group-item">We call first() function which is declare in the <code>global scope</code>.</li>
+            <li class="list-group-item">We create a new scope by creating the <code>first() function</code>.</li>
+            <li class="list-group-item">We add in the first() function scope a B variable which is in the <code>first() scope</code>.</li>
+            <li class="list-group-item">We call the second() function which is declare in the <code>first() scope</code>.</li>
+            <li class="list-group-item">We create a new scope by creating the <code>second() function</code>.</li>
+            <li class="list-group-item">We add in the second() function scope a C variables which is define in the <code>second() scope</code>.</li>
+            <li class="list-group-item">We call the third() function who is available because she's in the <code>parent global scope</code>.</li>
+            <li class="list-group-item">Back in the global scope we create a new scope who is a <code>function third()</code>.</li>
+            <li class="list-group-item">We create in the third() scope a D variable which is define in the <code>third() scope</code>.</li>
+            <li class="list-group-item">In this example we have an error because we try to call a variable who is C
+            in the <code>third() scope</code> but this variable is define in the <code>second() scope</code> so it's
+            impossible, because we know that we can only access variable, functions... in the parent scope.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">The solution !!</h2>
+          <script src="https://gist.github.com/luctst/457c2cb086a9006c0ad89d9b6725a067.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">If we don't want any errors
+            we should try to acess D or A variables.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

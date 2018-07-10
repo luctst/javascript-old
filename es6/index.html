@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Javascript 2015 - Es6</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center mt-4 mb-4">Ecmascript 2015</h1>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-12">
+            <h2 class="mt-4 mb-4">What is ecmascript 2015</h2>
+            <blockquote class="blockquote ml-4">
+              <p><em><small>Ecmascript is simply the new version of javascript out in 2015. Also called ES6</small></em></p>
+              <footer class="blockquote-footer"><small><cite title="Source title">developer.mozilla.org</cite></small></footer>
+            </blockquote>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Const, let</h2>
+          <script src="https://gist.github.com/luctst/7d7667dc5ab301607cc5b841413dd363.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">With es6 you can declares variables with two new terms
+            <code>let, const</code>.</li>
+            <li class="list-group-item">With <code>const</code> you can store variables like we did with
+            <code>var</code> except that you can't change the values of a <code>const</code>.</li>
+            <li class="list-group-item"><code>let</code> works like <code>var</code> but there a some
+            differencies.</li>
+            <li class="list-group-item"><code>var and const</code> create a <code>block-scope</code> which
+            means that if you create many <code>let, const</code> in a diferent scope it will create
+            many variables.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Immediatly invoked functions expression IIFE.</h2>
+          <script src="https://gist.github.com/luctst/24726e10c242b616f44b19a6569b5512.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">Remember IIFE is useful when you want call a function only once
+            and when you want create a unique scop.</li>
+            <li class="list-group-item">In es6 we know that <code>{}</code> create a scope combine with
+            <code>let or const</code> so you can simply create an IIFE by using <code>{}</code>.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Template literal strings in es6</h2>
+          <script src="https://gist.github.com/luctst/70f1a80510896d8c4ba5a14afb708788.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">Template literal is a new way to display string in es6.</li>
+            <li class="list-group-item">In es5 you have to use <code>+</code>to display a string, with es6
+            you can use <code>template literal</code>.</li>
+            <li class="list-group-item">To display strings with es6 you must use backtips <code>``</code>
+            and <code>${nameOfYourVariable}</code> to display the content.</li>
+            <li class="list-group-item">This syntax makes the content more readable.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Function Arrow</h2>
+          <script src="https://gist.github.com/luctst/3ff521f75ae00dcb60957e21caa40a9b.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">With es6 functions changed let's see what's new.</li>
+            <li class="list-group-item">You can now write functions with this new syntax, first you have to store
+            function in a <code>variable</code>, then the first word will be <code>parameter(s)</code> of your function,
+            after that use <code>=></code> to start declare the <code>line(s)</code> of your function, you will se later that
+            you may need this <code>{}</code> but we will see later.</li>
+            <li class="list-group-item">There are many possibilities in es6 functions you may have, one
+            <code>parameter</code> and one <code>line</code>, <code>one or more parameters</code>
+            and <code>one line</code>, and <code>one or more parameters</code> but <code>many lines</code>,
+            let's see all examples.</li>
+            <li class="list-group-item">One <code>parameter</code> and one <code>line</code>, in this
+            example after your <code>variable</code> declaration write your <code>parameter</code> use
+            <code>=></code> and write your <code>function declaration</code>, notice that with this
+            syntax you don't have to use <code>return</code> es6 did it for you.</li>
+            <li class="list-group-item"><code>One or more parameters</code> and <code>one line</code>
+            , for this case the syntax is the same except that you need to frame your <code>parameters</code>
+            in <code>()</code>, same thing with <code>return</code>.</li>
+            <li class="list-group-item">Finally <code>one or more parameters</code> but <code>many lines</code>
+            , for this case the syntax is a little bit different of curse same principle for
+            <code>parameter(s)</code> but this time if you have to declare more than <code>one line</code>
+            in your <code>function declaration</code> you must use <code>{}</code>, and declare
+            <code>return</code> if you want use it.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Lexically this keyword</h2>
+          <script src="https://gist.github.com/luctst/07ee57d14ce04a862d817c0ac0717046.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">In es5 to access with <code>this</code> to a property in a
+            <code>regular function</code> you have to <code>call, bind this</code> for that works.</li>
+            <li class="list-group-item">In our first example who is wrote in <code>es5</code> we create
+            an object who is <code>box5</code> in this object we create <code>two properties and one method</code>
+            in this method we can use <code>this</code> to return property of this <code>context object</code>
+            because as we know <code>this</code> return the values of this <code>context object</code> when he's
+            called in a <code>method</code>. But we also create in our <code>method</code> an
+            <code>anonymous function</code> and we try to access properties with <code>this</code> but
+            it doesn't work.. And it's completly normal because we call our <code>this</code> in a
+            <code>regular function</code> and not a <code>method</code>. One solution is to create in our
+            <code>method scope</code> a <code>variable</code> who contains <code>this</code> like we did and
+            called this <code>variable</code> instead of <code>this</code> and with the magic of <code>scope</code>
+            this should be work perfectly. An other solution will be to <code>call, bind and apply</code>.</li>
+            <li class="list-group-item">So this method works but she's not very simple to read and understand
+            at first. With <code>es6</code> it's more simple.</li>
+            <li class="list-group-item">Unlike a <code>regular function</code>, an <code>arrow function</code>
+             does not bind <code>this</code>, instead <code>this</code> is bound <code>lexycally</code>.</li>
+             <li class="list-group-item">In our second example written in <code>es6</code> we create an
+            <code>object: box6</code> we give <code>two properties and one method</code> and like our first
+            example in our <code>method</code> we can use <code>this</code> to access <code>properties</code>
+            of our current object, but this time instead of create an <code>anonymous function</code>with
+            <code>es5</code> we create an <code>arrow function</code> and because <code>this</code> is
+            <code>bound lexically</code> you can use it like you did before and it's works.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Destructuring</h2>
+          <script src="https://gist.github.com/luctst/043fc07f632f06371ac2d143a9b0fc93.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item"><code>Destructuring</code> is helpful when you want extract
+            <code>values</code> from an <code>array</code> or <code>object</code> .</li>
+            <li class="list-group-item">There are many possibilities of <code>destructuring</code>, for an
+            <code>array</code> start to declare your <code>const, let</code> then open <code>[]</code>
+            which indicates that you extract values from an <code>array</code>, after that you just need
+            to declare the new name of your <code>values</code>, finally use the <code>=</code>
+            and declare your array where the <code>values</code> will be extracts.</li>
+            <li class="list-group-item">For <code>object</code> there are two ways of using
+            <code>destructuring</code>, the first one is like <code>array</code> but instead of using
+            <code>[]</code>you have to use <code>{}</code> and write the exact same <code>properties</code>,
+            and the second one is a little bit different because you can create new <code>variables</code>
+            simply add <code>propertiesObject: nameOfYourVariable</code> and that's it you create a new
+            <code>variable</code> with the value of the <code>property</code> of the <code>object</code>.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Loops</h2>
+          <script src="https://gist.github.com/luctst/4dd6339dd2b1245517a946cf775d92d3.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">Es6 include two new ways of declaring functions <code>for of</code> and <code>for in</code> .</li>
+            <li class="list-group-item">The first new method is <code>for of</code> with this method you can simply declare your <code>variable</code> and after the <code>of</code> keyword include the <code>parameter</code> that you want loop over. this method return the value inside your <code>parameter</code> .</li>
+            <li class="list-group-item">The second method is <code>for in</code> with this one who works exactly the same than <code>for of</code> but instead to return <code>value</code> this one will return the <code>index position</code> of the elements in your <code>parameter</code> .</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Spread operator</h2>
+          <script src="https://gist.github.com/luctst/78d7ad7cabbd1cb9110e89af6f1049b9.js"></script>
+          <ul class="mt-4 mb-4 list-group">
+            <li class="list-group-item">The <code>spread</code> operator allow the elements of our array to <code>expand</code> .</li>
+            <li class="list-group-item">In the first example you can <code>include</code> array in an other array by using the <code>spread</code> operator who will include the elements in array instead of nested as you can see.</li>
+            <li class="list-group-item">The <code>spread</code> operator allow us to <code>copy</code> array as you may know when you're using <code>=</code> to copy an <code>object</code> to an ohter <code>object</code> you don't create a copy but a <code>reference</code> which means that each operation you made on this <code>reference</code> will be also on the <code>initial</code> object as you can see on the second example.</li>
+            <li class="list-group-item">The <code>spread</code> operator also allow us to insert <code>string</code> in array like in our third example.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Rest parameter</h2>
+          <script src="https://gist.github.com/luctst/171695144347517a8fa5e280297b7193.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">The <code>rest</code> parameter is used in a function declaration oposite of <code>spread</code> operator who are using when you call a function.</li>
+            <li class="list-group-item">The <code>rest</code> parameter is using when you don't know how many <code>parameters</code> you have in your function and he put this value in an <code>array</code>, the <code>spread</code> operator transform elements in array as <code>single value</code> .</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Classe</h2>
+          <script src="https://gist.github.com/luctst/9c3f55d4c800f2d7ae114b45a33b74b7.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">In es6 <code>classes</code> changes a little bit.</li>
+            <li class="list-group-item">to declare <code>classes</code> you can use the keyword <code>class</code>, in this one you can also use the <code>constructor</code> function who works like the constructor function es5 but directly inside your <code>class</code> .</li>
+            <li class="list-group-item">With es6 you can directly declare your <code>method</code> in your <code>class</code>, and use keyword like <code>static</code> who block the <code>inheritance</code> .</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4"></h2>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

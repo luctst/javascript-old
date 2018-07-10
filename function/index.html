@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Functions in javascript</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center mt-4 mb-4">Manage functions</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">what is a functions</h2>
+          <blockquote class="blockquote ml-4">
+            <p><em><small>Generally a function is a "subprogram" that can be calles anywhere in your code,
+            a function is composed of a sequance of statements called the function body. Values can be
+            passed to a function, and the function will return a value.</small></em></p>
+            <footer class="blockquote-footer"><small><cite title="Source title">Source by developer.mozilla.org</cite></small></footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Functions</h2>
+          <script src="https://gist.github.com/luctst/2cb0f34603a58db61fae85e1bf45fe9f.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">There are two ways of creating functions by storing them in <code>variable</code> or by using the <code>function</code> keyword.</li>
+            <li class="list-group-item">Functions works in two steps, the first one is when you <code>declare</code> your function which mean that you create the function by coding inside her, the second step is when you <code>call</code> your function when you're done to write your function you maybe want execute the code inside her to do that you must call by using his <code>name</code> .</li>
+            <li class="list-group-item">You may notice that you can use <code>parameters</code> ? parameters are <code>data</code> inside <code>()</code> they are really helpful because you can call any type of datas <code>objects, arrays, variable, number..</code> Parameters are used to call most of the times unknown datas who can interact inside of your function.</li>
+            <li class="list-group-item">You can create what you want in your function, you can use <code>if / else statements, loop, create array, object anything</code> .</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Functions expressions,statements</h2>
+          <script src="https://gist.github.com/luctst/79e90fb892e93763446abf7191b061e5.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">In javascript there is a convention about functions you can create <code>expressions functions</code> and <code>statements functions</code> .</li>
+            <li class="list-group-item">An <code>expression function</code> is written by using <code>variable</code> so if you want a call this function you must use the name of the variable. <code>expression function</code> are using when you need to produce a value.</li>
+            <li class="list-group-item">An <code>statement function</code> is written by using the <code>function keyword</code> follow by the name of your function, they are helpful when you need to perform an <code>action</code> like our example above.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Functions returning anonymous functions (closures)</h2>
+          <script src="https://gist.github.com/luctst/f491492c9dd299b61fd399f4395da109.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">In javascript
+              <code>functions</code> are object, so you can call within a function an other anonymous functions who is also an
+              <code>object</code>.</li>
+            <li class="list-group-item">By declaring a function into an other function you create a
+              <code>closure</code> which means that
+              <code>closure</code> can access datas after the parent function was called.</li>
+            <li class="list-group-item">This kind of functions is really helpful when you need to organize your code instead of having many functions you can
+              only write one function and add many
+              <code>anonymous functions</code>, this is better for organize and reading code.</li>
+            <li class="list-group-item">There are two ways of calling this function but in this example we will use the method with the double
+              <code>()</code>, you can if you want store your function in a variable like i did or call in the global context without variable,
+              to call this function simply use an other
+              <code>()</code> after the first and enter your parameters if you have one and that's it.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Callback functions</h2>
+          <script src="https://gist.github.com/luctst/ac14ceb9b60665ca5f2b792bd5da469c.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">A <code>callback function</code> is simply when you call later a function in parameter of an other function.</li>
+            <li class="list-group-item">In our example we want push the result of a function in a new array, to do that we 're gonna use a function who will call <code>callback function</code>, this is really helpful when you have a big function and you can split your function into separate functions to better organize your code.</li>
+            <li class="list-group-item">First we create an array who gonna store our datas, after that we declare our <code>arrayCalc</code> function who takes two parameters the first one is an <code>array of datas</code> and the second one is a <code>function</code>.</li>
+            <li class="list-group-item">In our function we create an <code>empty array</code> we gonna use this array to store our result, then we <code>loop</code> through our array passed in parameter, finally we push in this array the result of our <code>function</code> passed in parameter.</li>
+            <li class="list-group-item">You may notice that when you <code>call</code> your function you usally use <code>()</code> to say "execute this function", but when you use callback function you don't use <code>()</code> because you don't want execute the function Immediatly you want that your initial function call this one later in the execution so don't use <code>()</code> when you use <code>callback function</code> .</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Immediatly invoked functions expressions</h2>
+          <script src="https://gist.github.com/luctst/20ae26d7985898b22f5c9b1b42097f61.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">Iife (Immediatly invoked function expression) is a new kind of functions, they are helpful when you when created a kind of <code>data privacy</code> in other terms everything inside your iide would be only <code>available inside her</code>, which means that your code inside will not interact with the code inside your <code>global context</code>. Iife are also practice when you have a piece of code who not gonna change inside your application.</li>
+            <li class="list-group-item">So how iife works ? To start using iife you first need to use <code>()</code> then your declare a function like you normally did, the little trick is at the end as you know iife created a private scope which means that you can only access data inside of the iife so you <code>can't call iife in the global context</code>, so to call the iife you must use after the last <code>)</code> and other collections of <code>()</code> who tells to javascript to execute the iife.</li>
+            <li class="list-group-item">As you can see in our example you can use if you want <code>parameters</code> in your iife, to use this <code>parameters</code> include your datas when you declare your iife in the last <code>()</code>.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4"></h2>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Javascript constructor</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center mt-4 mb-4">Constructor</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">What is a constructor</h2>
+          <blockquote class="blockquote ml-4">
+            <p><em><small>The constructor method is a method that is used to create and initialize an object when
+            using the class keyword. There can only be one method that uses the constructor keyword within a class.
+            A SyntaxError exception will be thrown if the class contains more than one constructor method.
+            The constructor can use the super keyword to call the constructor of the parent class</small></em></p>
+            <footer class="blockquote-footer"><small><cite title="Source title">developer.mozilla.org</cite></small></footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">How constructor works</h2>
+          <script src="https://gist.github.com/luctst/7b52bf5b5108269b5dc7e1f04f6183c0.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">To avoid repetition let's say we want to create many <code>objects</code>,
+            let's say this <code>object</code> are persons it will be very restrictive if we have to create a lot of
+            persons and we will not respect the DRY. So we can create a <code>constructor</code> who will be like a
+            reference where all <code>object</code> will inherit of his property and methods.</li>
+            <li class="list-group-item">To create a <code>constructor</code> we only create a <code>constructor()</code> function.</li>
+            <li class="list-group-item">By adding parameter to the function with the <code>this</code> keyword who point
+            on this parameter we indicated that the parameter create news property.</li>
+            <li class="list-group-item">Like we know the <code>this</code> keyword point from the object where he's called,
+            so in our example the <code>this</code> keyword point the the <code>window object</code>. To avoid that when we create a
+            <code>new object</code> we simply add the new keyword before the constructor function to create a <code>new empty object</code>
+            and declare that the parameters are the <code>new property of our object</code>.</li>
+            <li class="list-group-item">Now that we see how <code>constructor</code> works with <code>property</code> we can also add
+            <code>methods</code>. To do that we can create a method directly in our objects.
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

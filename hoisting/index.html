@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Hoisting in practice</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center mt-4 mb-4">Hoisting in javascript</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">What is hoisting</h2>
+          <blockquote class="blockquote ml-4">
+            <p><em><small>Hoisting in javascript was build like a way to think how the execution context
+            will work hen the page is loaded, we will show examples below to understand.</small></em></p>
+            <footer class="blockquote-footer"><small><cite title="Source title">Source by Developer.mozilla.org</cite></small></footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="row">
+        <h2 class="mt-4 mb-4">Functions</h2>
+        <script src="https://gist.github.com/luctst/c8c3d4409ddfad8e595f53249aa47b09.js"></script>
+        <ul class="list-group mt-4">
+          <li class="list-group-item">Hoisting in javascript is a really important concept who can allow us to
+          fix some communs problems.</li>
+          <li class="list-group-item">Hoisting functions in javascript is a little bit diferent than variables, arrays..</li>
+          <li class="list-group-item">If you look at the example above you can see that you can call after declare it
+          a function, but you can't do that with an anonymous function like our second example.</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h2 class="mt-4 mb-4">Variables, arrays, objects</h2>
+        <script src="https://gist.github.com/luctst/e7ef6a5ca4e029c5d40e9ea1e8fda44f.js"></script>
+        <ul class="list-group mt-4 mb-4">
+          <li class="list-group-item">Hoisting variables, arrays and objects are a little bit different than functions.</li>
+          <li class="list-group-item">First you have to declare your variables or arrays before call it or you will have
+          an error.</li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

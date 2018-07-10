@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <title>Page Title</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mt-4 mb-4">Asynchronous javascript</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mt-4 mb-4">What is asynchronous javascript</h2>
+                <blockquote class="pl-4">
+                    <small>
+                        <em>Synchronous javascript means that your code is executed line by line, this involves that you have to wait that the line above ending before execute the others lines. Asynchronous javascript is the opposite of synchronous javascript, which means that you don't have to wait a line of code to be finish to start an other one.</em>
+                    </small>
+                </blockquote>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mt-4 mb-4">First example</h2>
+                <script src="https://gist.github.com/luctst/7f4a8689073f1e9a5fe3039e4c8e1cc0.js"></script>
+                <ul class="list-group mt-4 mb-4">
+                    <li class="list-group-item">As you can see in our example <code>synchronous</code> execute code line by line and <code>asynchronous</code> store a function who using a callback function and continue to execute the line.</li>
+                    <li class="list-group-item">How this process works ? So the four function is called so she's push as first in the <code>execution stack</code> then the console.log is called so this function is push as first in the <code>execution stack</code>, when the console.log function is done she's now push out of the execution stack and in the console you should have written <code>hey there</code>. Back in our execution stack we execute the second line which is the <code>third function</code> so this function is push in first position on the <code>execution stack</code> but this function has a <code>callback function</code> so instead of being executed directly she's push and store in the <code>Web api stack</code> which contains API like <code>Ajax, DOM Events, callback function..</code> Up until this point in the <code>web api stack</code> the function is running in the background of our code, we're now back in our execution stack and like our <code>third</code> function is in the web api stack she's not in the execution stack for now, we can now keep going our code which is <code>the third line of our four function</code> so we call the console.log function which is push in first position in execution stack and write <code>The end </code> in our console. If you look in your console at this time you should have written <code>Hey there and the end</code>, we can now exit of our four function and that's it, but remeber we have a <code>callback function</code> who is running in the background of our code like our code is done this function can now be push in the <code>message queue stack</code> who using a loop to send the result of his stack in the execution stack. The final result in our console is <code>Hey there, The end, Async hey there</code> .</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mt-4 mb-4">Async / await with ES6</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

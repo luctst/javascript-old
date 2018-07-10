@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>This keyword in Javascript</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center mt-4 mb-4">This keyword in javascript</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">What is the this keyword</h2>
+          <blockquote class="blockquote ml-4">
+            <p><em><small>In most cases, the value of this will be determined from the way a function is
+            called. It is not possible to assign a value to it at run time and its value may be different
+            each time the function is called.</small></em></p>
+            <footer class="blockquote-footer"><cite title="Source title"><small>developer.mozilla.org</small></cite></footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">This keyword in practice</h2>
+          <script src="https://gist.github.com/luctst/369c6c5c07648839a54e80d71c9bc250.js"></script>
+          <ul class="list-group mt-4 mb-4">
+            <li class="list-group-item">The <code>this</code> keyword is a little bit different, he returns the value of
+            the <code>context</code> where it is called, let's try to explain with our examples above.</li>
+            <li class="list-group-item">In our first example we create a <code>variable keyword</code> who is
+            equal to <code>this</code> and then we call our <code>keyword variable</code> in the global context
+            in other terms in the <code>window</code> context so the <code>window</code> object is return.</li>
+            <li class="list-group-item">The <code>this</code> keyword acts diferent when he's called in a different
+            <code>scope</code> like <code>function</code> or <code>object</code>.</li>
+            <li class="list-group-item">In a regular <code>function</code> <code>this</code> keyword
+            will return the <code>global context object</code> who is <code>window object</code>, as we can
+            see in our <code>caculateAge()</code> function.</li>
+            <li class="list-group-item">In a <code>method</code> he returns the value of the object where
+            he's called as you can see with our <code>calculateYear</code> method in <code>lucas object</code>
+            , but there is also a regular <code>function</code> and this one return the <code>window object</code>
+            because <code>this</code> is called in a <code>regular function</code> .</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

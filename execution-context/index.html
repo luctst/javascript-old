@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>How javascript works</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mt-4 mb-4">How javascript works</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mt-4 mb-4">What is an execution stack</h2>
+                <blockquote class="blockquote pl-4"><em><small>The javascript code needs to be executed in a specific  environment for it to work and this environment is called the execution
+                context, we can imagine this as a box that contains our code, variables etc. Here where our code is executed.</small></em></blockquote>
+                <footer class="blockquote-footer"><small><cite source="Source title">Developer.mozilla.org</cite></small></footer>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mt-4 mb-4">How code is executed</h2>
+                <script src="https://gist.github.com/luctst/59f90563a2850718f6d0ace32d2ada97.js"></script>
+                <ul class="list-group mt-4 mb-4">
+                    <li class="list-group-item">In javascript functions create a scope which means that all codes declared outside a function is associated to the <code>global object</code> and in javascript a browser is <code>global object</code> represented by <code>window object</code>, so if you create a variable in the <code>global object</code> you automaticaly add a <code>property</code> to the <code>window object</code> because variable are like properties in object.</li>
+                    <li class="list-group-item">So in our example above, we create a variable in our <code>global context</code> so she's stores in the <code>global context</code>, then we declare three functions in the <code>global context</code> so they are stores into this one.</li>
+                    <li class="list-group-item">After that still in our <code>global context</code> we call the <code>first() function</code> up until this point our execution stack now contain on top the
+                    <code>first() execution context</code> which means that now javascript will run the code inside the<code>first() function</code>.</li>
+                    <li class="list-group-item">Now that we are in the <code>first() function execution</code> we store variable <code>a</code> and then we call the <code>second() function</code> so now on top of our execution stack we have the <code>second() function</code>.</li>
+                    <li class="list-group-item">We call the variable <code>b</code> and then the <code>third() function</code> so execution stack on top is now <code>third() function execution context</code>.</li> 
+                    <li class="list-group-item">And then javascript stores variables <code>c and z</code>, our third function is now done so the <code>third() execution context</code> on the stack is now push outside, we're now back on the <code>second() execution context</code> we store the variable <code>z</code> and then we push out the <code>second() execution context</code>.</li>
+                    <li class="list-group-item">Back in our <code>first() function context</code> we can now stores the last variable <code>x</code> and push out the <code>first() function context</code>.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
